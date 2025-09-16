@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Resume - Paula Palacios</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <!-- Favicons -->
+    <link href="img/Fav.png" rel="icon" />
+    <link href="img/Fav.png" rel="apple-touch-icon" />
+
+    <!-- Bootstrap -->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <!-- Main Stylesheet File -->
+    <link rel="stylesheet" href="css/style_night.css" />
+    <link href="css/resume.css" rel="stylesheet" />
+  </head>
+
+  <body id="page-top">
+    <button id="darkModeToggle" class="dark-toggle">🌙</button>
+    <!-- ======= Navbar ======= -->
+    <nav
+  class="navbar navbar-b navbar-trans navbar-expand-md fixed-top"
+  id="mainNav"
+>
+  <div class="container">
+    <a class="navbar-brand js-scroll" href="#page-top">
+      Dev Paula Palacios
+    </a>
+    <button
+      class="navbar-toggler collapsed"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarDefault"
+      aria-controls="navbarDefault"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <div
+      class="navbar-collapse collapse justify-content-end"
+      id="navbarDefault"
+    >
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link js-scroll active" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="btn-cta" href="resume.html" target="_blank">
+            DOWNLOAD CV
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+    <!-- End Navbar -->
+     
+    <!-- ======= Sección CV ======= -->
+    <main style="margin-top: 120px">
+      <div class="container">
+        <h2 class="text-center mb-4">
+          <i class="fa fa-file-pdf"></i> Download My CV
+        </h2>
+
+        <div class="cv-card">
+          <!-- Selector de idioma -->
+        <div class="text-center mb-3">
+          <label for="cvLang" class="mr-2 font-weight-bold">Choose Language:</label>
+          <select id="cvLang" class="form-control d-inline-block w-auto">
+            <option value="es">Español</option>
+            <option value="en" selected>English</option>
+          </select>
+        </div>
+          <!-- Visor del CV -->
+          <div class="cv-viewer text-center mb-3">
+            <iframe id="cvFrame" src="cv/HV-FrontDeveloper_EN.pdf"></iframe>
+          </div>
+          <!-- Botón de descarga -->
+          <div class="text-center">
+            <a
+              id="downloadBtn"
+              href="cv/HV-FrontDeveloper_EN.pdf"
+              class="btn btn-purple px-4 py-2"
+              download
+            >
+              <i class="fa fa-download"></i> Download CV
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- JavaScript Libraries -->
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/jquery/jquery-migrate.min.js"></script>
+    <script src="lib/popper/popper.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/counterup/jquery.waypoints.min.js"></script>
+    <script src="lib/counterup/jquery.counterup.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/typed/typed.min.js"></script>
+
+    <!-- Shuffle.js -->
+    <script src="js/jquery.shuffle.min.js"></script>
+
+    <!-- Main Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/script_portfolio.js"></script>
+    <script src="js/night.js"></script>
+    <!-- JS  -->
+    <script src="js/resume.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

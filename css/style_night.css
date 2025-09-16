@@ -1,0 +1,205 @@
+/* 🌙 --- Dark Mode Styles --- */
+
+/* General */
+body.dark-mode {
+  background-color: #000000; /* Fondo general */
+  color: #ffffff; /* Texto por defecto */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Títulos */
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode h6 {
+  color: #ffffff;
+  transition: color 0.3s ease;
+}
+
+/* Párrafos */
+body.dark-mode p,
+body.dark-mode li,
+body.dark-mode span {
+  color: #e0e0e0;
+  transition: color 0.3s ease;
+}
+
+/* Links */
+body.dark-mode a {
+  color: #d17bb4;
+  transition: color 0.3s ease;
+}
+body.dark-mode a:hover {
+  color: #ffffff;
+}
+
+/* Secciones / Bloques principales */
+body.dark-mode .box-shadow-full {
+  background: #1d1d1d;
+  transition: background 0.3s ease;
+}
+
+/* Secciones / Bloques principales */
+body.dark-mode section {
+  background: #000000;
+  transition: background 0.3s ease;
+}
+
+/* Botones generales */
+body.dark-mode .button {
+  background-color: #81195f;
+  color: #fff;
+  border: none;
+  transition: background 0.3s ease;
+}
+body.dark-mode .button:hover {
+  background-color: #5e1247;
+}
+
+/* Footer */
+body.dark-mode footer {
+  background-color: #000000;
+  color: #cccccc;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Iconos sociales */
+body.dark-mode .ico-circle {
+  background: #81195f;
+  color: #fff;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+
+/* --- FIXES ESPECÍFICOS POR SECCIÓN --- */
+
+/* 1. HERO (quitar bloques negros encima de la imagen de fondo) */
+body.dark-mode #hero,
+body.dark-mode #hero .overlay-mf {
+  background: none !important;
+}
+
+/* 2. About (texto negro en modo oscuro) */
+body.dark-mode #about p,
+body.dark-mode #about li,
+body.dark-mode #about span {
+  color: #ffffff !important;
+}
+
+
+body.dark-mode #call-to-action h2,
+body.dark-mode #call-to-action p,
+body.dark-mode #call-to-action a {
+  color: #ffffff !important;
+}
+
+/* 4. Contacto (parrafos en blanco) */
+body.dark-mode #contact p,
+body.dark-mode #contact li,
+body.dark-mode #contact span {
+  color: #ffffff !important;
+}
+
+/* 5. Header (fondo negro SOLO cuando hago scroll) */
+body.dark-mode #mainNav.navbar-reduce {
+  background-color: #000000 !important;
+}
+
+body.dark-mode #mainNav a,
+body.dark-mode #mainNav .nav-link {
+  color: #ffffff !important;
+  transition: color 0.3s ease;
+}
+
+body.dark-mode #mainNav a:hover,
+body.dark-mode #mainNav .nav-link:hover {
+  color: #d17bb4 !important; 
+}
+
+/* Párrafos dentro de las skill-box en modo noche */
+body.dark-mode .skill-box p {
+  color: #69134d; 
+  transition: color 0.3s ease;
+}
+
+
+/* 🌞 --- Light Mode Styles (Default) --- */
+.dark-toggle {
+  position: fixed;
+  bottom: 20px;   
+  left: 20px;      
+  background: #641349;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  font-size: 15px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3);
+  transition: background 0.3s ease, transform 0.3s ease;
+  z-index: 9999;
+}
+
+.dark-toggle:hover {
+  background: #5e1247;
+  transform: scale(1.1);
+}
+
+
+/* Estilo general de la hamburguesa */
+.navbar-toggler span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: #333; 
+  transition: all 0.3s ease;
+  border-radius: 2px;
+}
+
+/* En modo noche, las 3 líneas se ponen blancas */
+body.dark-mode .navbar-toggler span {
+  background-color: #fff;
+}
+
+/* Estilo base para la hamburguesa */
+.navbar-toggler span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: #333; 
+  transition: all 0.3s ease;
+  border-radius: 2px;
+}
+
+/* En modo noche siempre blanco */
+body.dark-mode .navbar-toggler span {
+  background-color: #fff !important;
+}
+
+/* Al hacer scroll (cuando la navbar cambia de estilo) también forzamos blanco */
+.navbar.navbar-reduce .navbar-toggler span,
+.navbar.navbar-trans.navbar-scrolled .navbar-toggler span {
+  background-color: #b453b8 !important;
+}
+
+/* ====== Modo noche para modales ====== */
+body.dark-mode .modal-content {
+  background-color: #121212; 
+  color: #fff; 
+}
+
+body.dark-mode .modal-body h4,
+body.dark-mode .modal-body p {
+  color: #fff !important; 
+}
+
+body.dark-mode .modal-header,
+body.dark-mode .modal-footer {
+  border-color: #333; 
+}
+
