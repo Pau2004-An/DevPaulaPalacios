@@ -7,8 +7,8 @@ function updateCV(lang) {
     cvFrame.src = "cv/CV_Front-End-Engineer.pdf";
     downloadBtn.href = "cv/CV_Front-End-Engineer.pdf";
   } else {
-    cvFrame.src = "cv/CV_Ingeniera-Front-End.pdf";
-    downloadBtn.href = "cv/CV_Ingeniera-Front-End.pdf";
+    cvFrame.src = "cv/CV_Ingeniera -Front-End.pdf";
+    downloadBtn.href = "cv/CV_Ingeniera -Front-End.pdf";
   }
 }
 
