@@ -4,11 +4,11 @@ const downloadBtn = document.getElementById("downloadBtn");
 
 function updateCV(lang) {
   if (lang === "en") {
-    cvFrame.src = "cv/HV-FrontDeveloper_EN.pdf";
-    downloadBtn.href = "cv/HV-FrontDeveloper_EN.pdf";
+    cvFrame.src = "cv/CV_Front-End-Engineer.pdf";
+    downloadBtn.href = "cv/CV_Front-End-Engineer.pdf";
   } else {
-    cvFrame.src = "cv/HV-FrontDeveloper.pdf";
-    downloadBtn.href = "cv/HV-FrontDeveloper.pdf";
+    cvFrame.src = "cv/CV_Ingeniera-Front-End.pdf";
+    downloadBtn.href = "cv/CV_Ingeniera-Front-End.pdf";
   }
 }
 
