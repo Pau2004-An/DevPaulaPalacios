@@ -12,7 +12,6 @@
   <!-- Hoja principal -->
   <link rel="stylesheet" href="css/services.css">
 
-
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,6 +20,46 @@
     rel="stylesheet"
   >
 </head>
+
+<nav class="navbar-b navbar-trans" id="mainNav">
+  <div class="nav-container">
+    <a class="navbar-brand" href="#home">Dev Paula Palacios</a>
+
+    <button class="navbar-toggler collapsed" type="button" aria-label="Abrir menú" id="navToggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <div class="navbar-collapse" id="navbarMenu">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#home">Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#sobre-mi">Sobre mí</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#servicios">Servicios</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#proyectos">Proyectos</a>
+        </li>
+
+
+        <li class="nav-item">
+          <a class="nav-link btn-cta" href="#contacto" target="_blank" rel="noopener noreferrer">
+            Contacto
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
 <body>
 
   <header class="services-hero">
@@ -660,6 +699,16 @@
         }
       });
     });
+  });
+</script>
+
+<script>
+  const navToggle = document.getElementById('navToggle');
+  const navbarMenu = document.getElementById('navbarMenu');
+
+  navToggle.addEventListener('click', () => {
+    navToggle.classList.toggle('collapsed');
+    navbarMenu.classList.toggle('is-open');
   });
 </script>
 

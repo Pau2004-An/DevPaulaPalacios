@@ -1408,3 +1408,229 @@ body {
   .services-plans__table td:nth-child(4)::before { content: "Escala"; }
 
 }
+
+/* ======================================
+   NAVBAR ADAPTADO LANDING
+====================================== */
+
+.navbar-b {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  background-color: #81195f;
+  padding: 22px 0;
+  transition: all 0.35s ease-in-out;
+}
+
+.navbar-b.navbar-trans {
+  background-color: #1b3f8ff5;
+}
+
+.navbar-b.navbar-reduce {
+  background-color: #81195f;
+  padding: 18px 0;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.nav-container {
+  width: min(100% - 32px, 1240px);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.navbar-b .navbar-brand {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 1;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.navbar-b .navbar-brand:hover {
+  color: #ffffff;
+}
+
+.navbar-collapse {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navbar-b .nav-item {
+  position: relative;
+}
+
+.navbar-b .nav-link {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 13px;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  padding: 10px 14px;
+  transition: all 0.3s ease;
+}
+
+.navbar-b .nav-link::before {
+  content: '';
+  position: absolute;
+  left: 14px;
+  bottom: 4px;
+  width: 0;
+  height: 2px;
+  background-color: #ffffff;
+  transition: width 0.3s ease;
+}
+
+.navbar-b .nav-link:hover::before,
+.navbar-b .nav-item.active .nav-link::before {
+  width: 34px;
+}
+
+.navbar-b .nav-link:hover,
+.navbar-b .nav-item.active .nav-link {
+  color: #ffffff;
+}
+
+.navbar-nav .btn-cta {
+  margin-left: 14px;
+  padding: 12px 28px;
+  border-radius: 999px;
+  background: #81195f;
+  color: #ffffff !important;
+  font-weight: 700;
+  border: none;
+  text-transform: uppercase;
+  text-decoration: none;
+  box-shadow: none;
+}
+
+.navbar-nav .btn-cta::before {
+  display: none;
+}
+
+.navbar-nav .btn-cta:hover {
+  background: #163f82;
+  color: #ffffff !important;
+}
+
+/* ======================================
+   HAMBURGER
+====================================== */
+
+.navbar-toggler {
+  display: none;
+  position: relative;
+  width: 46px;
+  height: 46px;
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active {
+  outline: none;
+  box-shadow: none;
+}
+
+.navbar-toggler span {
+  display: block;
+  width: 24px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: #ffffff;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(2) {
+  opacity: 0;
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* ======================================
+   MOBILE
+====================================== */
+
+@media (max-width: 991px) {
+  .navbar-b {
+    padding: 18px 0;
+  }
+
+  .nav-container {
+    align-items: center;
+  }
+
+  .navbar-b .navbar-brand {
+    font-size: 1.7rem;
+  }
+
+  .navbar-toggler {
+    display: block;
+    flex-shrink: 0;
+  }
+
+  .navbar-collapse {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    display: none;
+    background: #81195f;
+    padding: 10px 16px 20px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.12);
+  }
+
+  .navbar-collapse.is-open {
+    display: block;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 4px;
+  }
+
+  .navbar-b .nav-link {
+    width: 100%;
+    padding: 14px 6px;
+    justify-content: flex-start;
+  }
+
+  .navbar-b .nav-link::before {
+    left: 6px;
+    bottom: 8px;
+  }
+
+  .navbar-nav .btn-cta {
+    margin: 10px 0 0;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+  }
+}
