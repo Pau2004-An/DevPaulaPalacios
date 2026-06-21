@@ -1965,7 +1965,8 @@ body {
 }
 
 #mainNav {
-  z-index: 20;
+  /* Keep the fixed header above transformed Shuffle portfolio items. */
+  z-index: 1030;
 }
 
 #mainNav .container {
@@ -2034,6 +2035,7 @@ body {
 .navbar-b.navbar-reduce {
   background: rgba(32, 7, 31, 0.94);
   backdrop-filter: blur(16px);
+  box-shadow: 0 12px 30px rgba(25, 5, 28, 0.16);
 }
 
 .navbar-b.navbar-reduce .navbar-brand,
@@ -2804,6 +2806,7 @@ body:not(.dark-mode) section:not(.modern-contact) li {
   box-shadow: 0 10px 22px rgba(43, 15, 54, 0.25);
   line-height: 45px;
   transform: translateY(10px);
+  z-index: 3;
 }
 
 .portfolio-item .portfolio-item-thumb .rectangle i {
@@ -2821,6 +2824,7 @@ body:not(.dark-mode) section:not(.modern-contact) li {
   transform: none;
   opacity: 1;
   visibility: visible;
+  z-index: 2;
 }
 
 .portfolio-item .portfolio-info h3 {
