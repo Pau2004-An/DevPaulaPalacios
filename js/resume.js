@@ -8,8 +8,8 @@ const documentLanguage = document.getElementById("documentLanguage");
 function updateCV(lang) {
   const isEnglish = lang === "en";
   const file = isEnglish
-    ? "cv/CV_Front-End-Engineer.pdf"
-    : "cv/CV_Ingeniera -Front-End.pdf";
+    ? "cv/Paula_Palacios_Frontend_Developer_EN.pdf"
+    : "cv/Paula_Palacios_Frontend_Developer.pdf";
 
   cvFrame.src = file;
   downloadBtn.href = file;
