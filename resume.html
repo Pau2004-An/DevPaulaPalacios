@@ -1,128 +1,235 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Resume - Paula Palacios</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Resume | Paula Palacios</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Resume of Paula Palacios, Frontend Developer specialized in React, Next.js and WordPress."
+    />
 
-    <!-- Favicons -->
     <link href="img/Fav.png" rel="icon" />
     <link href="img/Fav.png" rel="apple-touch-icon" />
-
-    <!-- Bootstrap -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
-
-    <!-- Font Awesome CDN -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
-    <!-- Main Stylesheet File -->
     <link rel="stylesheet" href="css/style_night.css" />
     <link href="css/resume.css" rel="stylesheet" />
   </head>
 
-  <body id="page-top">
-    <button id="darkModeToggle" class="dark-toggle">🌙</button>
-    <!-- ======= Navbar ======= -->
-    <nav
-  class="navbar navbar-b navbar-trans navbar-expand-md fixed-top"
-  id="mainNav"
->
-  <div class="container">
-    <a class="navbar-brand js-scroll" href="#page-top">
-      Dev Paula Palacios
-    </a>
+  <body id="page-top" class="resume-page">
     <button
-      class="navbar-toggler collapsed"
-      type="button"
-      data-toggle="collapse"
-      data-target="#navbarDefault"
-      aria-controls="navbarDefault"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
+      id="darkModeToggle"
+      class="dark-toggle"
+      aria-label="Toggle color mode"
     >
-      <span></span>
-      <span></span>
-      <span></span>
+      &#9790;
     </button>
-    <div
-      class="navbar-collapse collapse justify-content-end"
-      id="navbarDefault"
-    >
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link js-scroll active" href="index.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="btn-cta" href="resume.html" target="_blank">
-            DOWNLOAD CV
-          </a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-    <!-- End Navbar -->
-     
-    <!-- ======= Sección CV ======= -->
-    <main style="margin-top: 120px">
-      <div class="container">
-        <h2 class="text-center mb-4">
-          <i class="fa fa-file-pdf"></i> Download My CV
-        </h2>
 
-        <div class="cv-card">
-          <!-- Selector de idioma -->
-        <div class="text-center mb-3">
-          <label for="cvLang" class="mr-2 font-weight-bold">Choose Language:</label>
-          <select id="cvLang" class="form-control d-inline-block w-auto">
-            <option value="es">Español</option>
-            <option value="en" selected>English</option>
-          </select>
-        </div>
-          <!-- Visor del CV -->
-          <div class="cv-viewer text-center mb-3">
-            <iframe id="cvFrame" src="cv/CV_Front-End-Engineer.pdf"></iframe>
-          </div>
-          <!-- Botón de descarga -->
-          <div class="text-center">
-            <a
-              id="downloadBtn"
-              href="cv/CV_Front-End-Engineer.pdf"
-              class="btn btn-purple px-4 py-2"
-              download
-            >
-              <i class="fa fa-download"></i> Download CV
-            </a>
-          </div>
+    <nav class="navbar navbar-b navbar-expand-md fixed-top" id="mainNav">
+      <div class="container-fluid resume-nav-shell">
+        <a class="navbar-brand" href="index.html">
+          <span class="brand-mark" aria-hidden="true">P</span>
+          <span>Dev Paula Palacios</span>
+        </a>
+        <button
+          class="navbar-toggler collapsed"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarDefault"
+          aria-controls="navbarDefault"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span></span><span></span><span></span>
+        </button>
+        <div
+          class="navbar-collapse collapse justify-content-end"
+          id="navbarDefault"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">
+                <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+                Back to portfolio
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                id="navDownloadBtn"
+                class="btn-cta"
+                href="cv/CV_Front-End-Engineer.pdf"
+                download
+              >
+                Download CV
+                <i class="fa-solid fa-download" aria-hidden="true"></i>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
+    </nav>
+
+    <main>
+      <section class="resume-hero">
+        <div class="resume-orb resume-orb-one" aria-hidden="true"></div>
+        <div class="resume-orb resume-orb-two" aria-hidden="true"></div>
+
+        <div class="container resume-container">
+          <div class="resume-heading">
+            <span class="resume-kicker">
+              <i class="fa-regular fa-file-lines" aria-hidden="true"></i>
+              Professional resume
+            </span>
+            <h1>Experience, skills and selected achievements.</h1>
+            <p>
+              Explore my professional profile directly or download the version
+              that best suits you.
+            </p>
+          </div>
+
+          <div class="resume-workspace">
+            <aside class="resume-sidebar">
+              <div class="resume-profile">
+                <div class="resume-avatar">
+                  <img src="img/Paula_About.png" alt="Paula Palacios" />
+                </div>
+                <div>
+                  <h2>Paula Palacios</h2>
+                  <p>Frontend Developer</p>
+                </div>
+              </div>
+
+              <div class="resume-availability">
+                <span aria-hidden="true"></span>
+                Open to new opportunities
+              </div>
+
+              <div class="resume-control">
+                <label for="cvLang">Resume language</label>
+                <div class="resume-select-wrap">
+                  <i class="fa-solid fa-language" aria-hidden="true"></i>
+                  <select id="cvLang" class="form-control">
+                    <option value="en" selected>English</option>
+                    <option value="es">Español</option>
+                  </select>
+                  <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+                </div>
+              </div>
+
+              <div class="resume-details">
+                <div>
+                  <i class="fa-regular fa-envelope" aria-hidden="true"></i>
+                  <span>
+                    <small>Email</small>
+                    <a href="mailto:palaciospalaciop@gmail.com"
+                      >palaciospalaciop@gmail.com</a
+                    >
+                  </span>
+                </div>
+                <div>
+                  <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                  <span><small>Location</small>Bogotá, Colombia</span>
+                </div>
+                <div>
+                  <i class="fa-solid fa-code" aria-hidden="true"></i>
+                  <span>
+                    <small>Specialization</small>
+                    React · Next.js · WordPress
+                  </span>
+                </div>
+              </div>
+
+              <a
+                id="downloadBtn"
+                href="cv/CV_Front-End-Engineer.pdf"
+                class="resume-download"
+                download
+              >
+                <i class="fa-solid fa-download" aria-hidden="true"></i>
+                Download CV
+              </a>
+              <a class="resume-portfolio-link" href="index.html#work">
+                View selected projects
+                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+              </a>
+            </aside>
+
+            <div class="resume-document">
+              <div class="resume-document-bar">
+                <div>
+                  <span class="document-icon">
+                    <i class="fa-regular fa-file-pdf" aria-hidden="true"></i>
+                  </span>
+                  <span>
+                    <strong>Paula Palacios — Resume</strong>
+                    <small id="documentLanguage">English version</small>
+                  </span>
+                </div>
+                <a
+                  id="openPdfBtn"
+                  href="cv/CV_Front-End-Engineer.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Open resume in a new tab"
+                >
+                  <i
+                    class="fa-solid fa-arrow-up-right-from-square"
+                    aria-hidden="true"
+                  ></i>
+                </a>
+              </div>
+
+              <div class="cv-viewer">
+                <iframe
+                  id="cvFrame"
+                  src="cv/CV_Front-End-Engineer.pdf"
+                  title="Paula Palacios resume preview"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-    <!-- JavaScript Libraries -->
+
+    <footer class="resume-footer">
+      <div class="container resume-container">
+        <p>© 2026 Paula Palacios. Designed and developed with care.</p>
+        <div>
+          <a
+            href="https://www.linkedin.com/in/paula-andrea-palacios-b3057b274/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+          >
+            <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+          </a>
+          <a
+            href="https://github.com/Pau2004-An"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub"
+          >
+            <i class="fa-brands fa-github" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+
     <script src="lib/jquery/jquery.min.js"></script>
-    <script src="lib/jquery/jquery-migrate.min.js"></script>
     <script src="lib/popper/popper.min.js"></script>
     <script src="lib/bootstrap/js/bootstrap.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/counterup/jquery.waypoints.min.js"></script>
-    <script src="lib/counterup/jquery.counterup.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/lightbox/js/lightbox.min.js"></script>
-    <script src="lib/typed/typed.min.js"></script>
-
-    <!-- Shuffle.js -->
-    <script src="js/jquery.shuffle.min.js"></script>
-
-    <!-- Main Scripts -->
-    <script src="js/main.js"></script>
-    <script src="js/script_portfolio.js"></script>
     <script src="js/night.js"></script>
-    <!-- JS  -->
     <script src="js/resume.js"></script>
-    <!-- Bootstrap JS -->
-    <script src="lib/jquery/jquery.min.js"></script>
-    <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

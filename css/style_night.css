@@ -203,3 +203,164 @@ body.dark-mode .modal-footer {
   border-color: #333; 
 }
 
+/* Keep the hero palette consistent when dark mode is enabled. */
+body.dark-mode .hero-modern p,
+body.dark-mode .hero-modern span,
+body.dark-mode .hero-modern a,
+body.dark-mode .hero-modern button {
+  color: inherit;
+}
+
+body.dark-mode .hero-modern .hero-eyebrow,
+body.dark-mode .hero-modern .typed-cursor,
+body.dark-mode .hero-modern .hero-pill i {
+  color: #bf5ef3;
+}
+
+body.dark-mode .hero-modern .intro-title,
+body.dark-mode .hero-modern .intro-subtitle,
+body.dark-mode .hero-modern .hero-button,
+body.dark-mode .hero-modern .hero-scroll,
+body.dark-mode .hero-modern .hero-language .active {
+  color: #ffffff;
+}
+
+body.dark-mode .brand-mark {
+  color: transparent !important;
+}
+
+/* Modernized content sections */
+body.dark-mode .modern-section {
+  background-color: #0d0b12;
+}
+
+body.dark-mode .section-soft {
+  background:
+    radial-gradient(circle at 10% 20%, rgba(151, 74, 222, 0.12), transparent 26%),
+    #121018;
+}
+
+body.dark-mode .modern-section .title-a,
+body.dark-mode .modern-section .title-left,
+body.dark-mode .about-info p span:last-child,
+body.dark-mode .skill-mf > span:not(.pull-right),
+body.dark-mode .portfolio-item .portfolio-info h3,
+body.dark-mode .modern-contact .title-left {
+  color: #f7f4fa !important;
+}
+
+body.dark-mode .modern-section .section-kicker,
+body.dark-mode .modern-contact .section-kicker,
+body.dark-mode .portfolio-item .portfolio-info p,
+body.dark-mode .skill-mf .pull-right {
+  color: #c47bea !important;
+}
+
+body.dark-mode .modern-section .subtitle-a,
+body.dark-mode .about-mf .lead,
+body.dark-mode .modern-contact .more-info .lead,
+body.dark-mode .modern-contact .list-ico li {
+  color: #bbb5c2 !important;
+}
+
+body.dark-mode .about-mf .box-shadow-full,
+body.dark-mode .skill-box,
+body.dark-mode .portfolio-item,
+body.dark-mode .modern-contact #contact.box-shadow-full {
+  border-color: rgba(255, 255, 255, 0.09);
+  background: #19161f;
+}
+
+body.dark-mode .skill-box p {
+  color: #f1edf4;
+}
+
+body.dark-mode .about-highlights span,
+body.dark-mode .about-tags span,
+body.dark-mode .portfolio-item .portfolio-info .tech-icons i,
+body.dark-mode .modern-contact .socials .ico-circle {
+  border-color: rgba(255, 255, 255, 0.08);
+  color: #d8d1dc;
+  background: #24202b;
+}
+
+body.dark-mode .modern-link-button,
+body.dark-mode .portfolio-sorting {
+  border-color: rgba(255, 255, 255, 0.1);
+  background: #211d27;
+}
+
+body.dark-mode .modern-contact .form-control {
+  border-color: rgba(255, 255, 255, 0.1);
+  color: #f7f4fa;
+  background: #211d27;
+}
+
+body.dark-mode .modern-contact .form-control:focus {
+  background: #26212d;
+}
+
+body.dark-mode .modern-contact #contact > .row > div + div {
+  border-color: rgba(255, 255, 255, 0.09);
+}
+
+body.dark-mode .about-profile-card {
+  border-color: rgba(255, 255, 255, 0.09);
+  background: #211d27;
+}
+
+body.dark-mode .about-profile-photo {
+  background: #30283c;
+}
+
+body.dark-mode .about-profile-card .about-info a,
+body.dark-mode .about-profile-card .about-info-content > span:last-child,
+body.dark-mode .about-stack-group h6 {
+  color: #f1edf4;
+}
+
+/* Project detail modals */
+body.dark-mode .project-modal .modal-content {
+  background: #17141c;
+}
+
+body.dark-mode .project-modal-visual {
+  border-color: rgba(255, 255, 255, 0.09);
+}
+
+body.dark-mode .project-modal-close,
+body.dark-mode .project-modal-image > a {
+  border-color: rgba(255, 255, 255, 0.12);
+  color: #f7f4fa;
+  background: #24202b;
+}
+
+body.dark-mode .project-modal-meta,
+body.dark-mode .project-modal-results {
+  border-color: rgba(255, 255, 255, 0.09);
+  background: #211d27;
+}
+
+body.dark-mode .project-meta-item strong,
+body.dark-mode .project-modal-details > h4,
+body.dark-mode .project-detail-item h5,
+body.dark-mode .project-modal-results strong {
+  color: #f7f4fa;
+}
+
+body.dark-mode .project-modal-summary,
+body.dark-mode .project-detail-item p {
+  color: #c5beca;
+}
+
+body.dark-mode .project-modal-tech i {
+  border-color: rgba(255, 255, 255, 0.09);
+  background: #2a2530;
+}
+
+body.dark-mode .project-modal-divider,
+body.dark-mode .project-modal-results > div + div {
+  border-color: rgba(255, 255, 255, 0.09);
+  background-color: rgba(255, 255, 255, 0.09);
+}
+

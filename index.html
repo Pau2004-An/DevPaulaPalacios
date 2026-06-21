@@ -6,10 +6,19 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <meta content="" name="keywords" />
     <meta content="" name="description" />
+    <script>document.documentElement.classList.add("js");</script>
 
     <!-- Favicons -->
     <link href="img/Fav.png" rel="icon" />
     <link href="img/Fav.png" rel="apple-touch-icon" />
+
+    <!-- Site typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Bootstrap CSS File -->
     <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
@@ -36,16 +45,17 @@
     <link rel="stylesheet" href="css/style_night.css" />
   </head>
   <body id="page-top">
-    <button id="darkModeToggle" class="dark-toggle">🌙</button>
+    <button id="darkModeToggle" class="dark-toggle" aria-label="Toggle color mode">&#9790;</button>
     <!--/ Nav Star /-->
     <nav
       class="navbar navbar-b navbar-trans navbar-expand-md fixed-top"
       id="mainNav"
     >
       <div class="container">
-        <a class="navbar-brand js-scroll" href="#page-top"
-          >Dev Paula Palacios</a
-        >
+        <a class="navbar-brand js-scroll" href="#page-top">
+          <span class="brand-mark" aria-hidden="true">P</span>
+          <span>Dev Paula Palacios</span>
+        </a>
         <button
           class="navbar-toggler collapsed"
           type="button"
@@ -80,7 +90,9 @@
               <a class="nav-link js-scroll" href="#contact">Contact</a>
             </li>
             <li class="nav-item">
-              <a class="js-scroll btn-cta" href="resume.html">DONWLOAD CV</a>
+              <a class="js-scroll btn-cta nav-cv" href="resume.html">
+                DOWNLOAD CV <i class="fa-solid fa-download" aria-hidden="true"></i>
+              </a>
             </li>
           </ul>
         </div>
@@ -89,179 +101,172 @@
     <!--/ Nav End /-->
 
     <!--/ Intro Skew Star /-->
-    <div
-      id="home"
-      class="intro route bg-image"
-      style="background-image: url(img/hero1.png)"
-    >
+    <div id="home" class="intro hero-modern route bg-image">
       <div class="overlay-itro"></div>
-      <div class="intro-content display-table">
-        <div class="table-cell">
-          <div class="container">
-            <h1 class="intro-title mb-4">I a'm Paula Palacios</h1>
+      <div class="hero-decoration hero-dots" aria-hidden="true"></div>
+      <div class="hero-decoration hero-ring" aria-hidden="true"></div>
+
+      <div class="intro-content">
+        <div class="hero-shell">
+          <div class="hero-copy">
+            <p class="hero-eyebrow">Hello, I’m <span aria-hidden="true"></span></p>
+            <h1 class="intro-title">Paula Palacios</h1>
             <p class="intro-subtitle">
               <span class="text-slider-items"
-                >Front-End Developer,WordPress Specialist,Creative Web
-                Designer,UI/UX Enthusiast,Digital Experience Builder</span
+                >Frontend Developer,React Developer,Next.js Developer,WordPress Specialist</span
               ><strong class="text-slider"></strong>
             </p>
+            <p class="hero-description">
+              I build fast, well-structured web interfaces and applications<br class="d-none d-md-block" />
+              using modern JavaScript frameworks like React and Next.js.
+            </p>
+            <div class="hero-actions">
+              <a class="hero-button hero-button-primary js-scroll" href="#work">
+                View my work <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+              </a>
+              <a class="hero-button hero-button-secondary js-scroll" href="#about">
+                About me <i class="fa-regular fa-user" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="hero-pill" aria-label="Development principles">
+            <i class="fa-solid fa-code" aria-hidden="true"></i>
+            <span>Clean code · Responsive · Accessible</span>
           </div>
         </div>
+      </div>
+
+      <a class="hero-scroll js-scroll" href="#about" aria-label="Scroll to about section">
+        <span class="mouse-icon" aria-hidden="true"></span>
+        <span>Scroll down</span>
+        <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+      </a>
+
+      <div class="hero-language" aria-label="Language">
+        <button class="active" type="button" data-language="en">EN</button>
+        <span class="divider"></span>
+        <button type="button" data-language="es">ES</button>
       </div>
     </div>
     <!--/ Intro Skew End /-->
 
-    <section id="about" class="about-mf sect-pt4 route">
+    <section id="about" class="about-mf sect-pt4 route modern-section">
       <div class="container">
         <div class="row">
           <div class="col-sm-12">
             <div class="box-shadow-full">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="row">
-                    <div class="col-sm-6 col-md-5">
-                      <div class="about-img">
-                        <img
-                          src="img/Paula_About.png"
-                          class="img-fluid rounded b-shadow-a"
-                          alt=""
-                        />
-                      </div>
+              <div class="row about-layout">
+                <div class="col-md-4">
+                  <aside class="about-profile-card" aria-label="Contact information">
+                    <div class="about-profile-photo">
+                      <img
+                        src="img/Paula_About.png"
+                        alt="Paula Palacios"
+                      />
                     </div>
-                    <div class="col-sm-6 col-md-7">
-                      <div class="about-info">
-                        <p>
-                          <span class="title-s">Name: </span>
+                    <div class="about-info">
+                      <p>
+                        <i class="fa-regular fa-user" aria-hidden="true"></i>
+                        <span class="about-info-content">
+                          <span class="title-s">Name</span>
                           <span>Paula Palacios</span>
-                        </p>
-                        <p>
-                          <span class="title-s">Profile: </span>
-                          <span>Front-End Developer</span>
-                        </p>
-                        <p>
-                          <span class="title-s">Email: </span>
-                          <span>palaciospalaciop@gmail.com</span>
-                        </p>
-                        <p>
-                          <span class="title-s">Phone: </span>
-                          <span>(+57) 3107626514</span>
-                        </p>
+                        </span>
+                      </p>
+                      <p>
+                        <i class="fa-solid fa-code" aria-hidden="true"></i>
+                        <span class="about-info-content">
+                          <span class="title-s">Profile</span>
+                          <span>Frontend Developer</span>
+                        </span>
+                      </p>
+                      <p>
+                        <i class="fa-regular fa-envelope" aria-hidden="true"></i>
+                        <span class="about-info-content">
+                          <span class="title-s">Email</span>
+                          <a href="mailto:palaciospalaciop@gmail.com"
+                            >palaciospalaciop@gmail.com</a
+                          >
+                        </span>
+                      </p>
+                      <p>
+                        <i class="fa-solid fa-phone" aria-hidden="true"></i>
+                        <span class="about-info-content">
+                          <span class="title-s">Phone</span>
+                          <span>(+57) 310 762 6514</span>
+                        </span>
+                      </p>
+                    </div>
+                  </aside>
+                </div>
+                <div class="col-md-8">
+                  <div class="about-me pt-4 pt-md-0">
+                    <p class="lead">
+                      I'm a Frontend Developer with 3+ years of experience
+                      building modern, responsive interfaces and applications
+                      using JavaScript frameworks like React and Next.js.
+                    </p>
+
+                    <p class="lead">
+                      My most recent project, Zureklamo, is a full-stack platform
+                      for managing insurance claims, built with Next.js,
+                      TypeScript and Firebase — I led the full development, from
+                      architecture to UI and backend integration.
+                    </p>
+
+                    <p class="lead">
+                      Alongside this, I work as a freelance WordPress developer,
+                      building and maintaining sites for agencies and businesses,
+                      with a focus on performance and technical SEO.
+                    </p>
+
+                    <p class="lead">
+                      I value clean code and continuous learning, and I'm
+                      currently open to full-time Frontend Developer roles and
+                      freelance projects.
+                    </p>
+
+                    <div class="about-highlights" aria-label="Professional highlights">
+                      <span>3+ years of experience</span>
+                      <span>Remote collaboration</span>
+                      <span>Performance focused</span>
+                    </div>
+
+                    <div class="about-stack">
+                      <div class="about-stack-group">
+                        <h6>Languages &amp; Frameworks</h6>
+                        <div class="about-tags">
+                          <span>JavaScript</span>
+                          <span>TypeScript</span>
+                          <span>React</span>
+                          <span>Next.js</span>
+                          <span>Laravel</span>
+                          <span>HTML</span>
+                          <span>CSS</span>
+                        </div>
+                      </div>
+
+                      <div class="about-stack-group">
+                        <h6>Platforms &amp; Tools</h6>
+                        <div class="about-tags">
+                          <span>WordPress</span>
+                          <span>PHP</span>
+                          <span>Figma</span>
+                          <span>GitHub</span>
+                          <span>Google Analytics</span>
+                          <span>HubSpot CRM</span>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="skill-mf">
-                    <p class="title-s">Core Skill</p>
-                    <span>HTML</span> <span class="pull-right">90%</span>
-                    <div class="progress">
-                      <div
-                        class="progress-bar"
-                        role="progressbar"
-                        style="width: 85%"
-                        aria-valuenow="85"
-                        aria-valuemin="0"
-                        aria-valuemax="100"
-                      ></div>
-                    </div>
-                    <span>CSS3</span> <span class="pull-right">80%</span>
-                    <div class="progress">
-                      <div
-                        class="progress-bar"
-                        role="progressbar"
-                        style="width: 75%"
-                        aria-valuenow="75"
-                        aria-valuemin="0"
-                        aria-valuemax="100"
-                      ></div>
-                    </div>
-                    <span>PHP</span> <span class="pull-right">75%</span>
-                    <div class="progress">
-                      <div
-                        class="progress-bar"
-                        role="progressbar"
-                        style="width: 50%"
-                        aria-valuenow="50"
-                        aria-valuemin="0"
-                        aria-valuemax="100"
-                      ></div>
-                    </div>
-                    <span>JAVASCRIPT</span> <span class="pull-right">80%</span>
-                    <div class="progress">
-                      <div
-                        class="progress-bar"
-                        role="progressbar"
-                        style="width: 90%"
-                        aria-valuenow="90"
-                        aria-valuemin="0"
-                        aria-valuemax="100"
-                      ></div>
-                    </div>
 
-                    <span>REACT</span> <span class="pull-right">70%</span>
-                    <div class="progress">
-                      <div
-                        class="progress-bar"
-                        role="progressbar"
-                        style="width: 90%"
-                        aria-valuenow="90"
-                        aria-valuemin="0"
-                        aria-valuemax="100"
-                      ></div>
-                    </div>
-
-                    <span>WordPress</span> <span class="pull-right">90%</span>
-                    <div class="progress">
-                      <div
-                        class="progress-bar"
-                        role="progressbar"
-                        style="width: 90%"
-                        aria-valuenow="90"
-                        aria-valuemin="0"
-                        aria-valuemax="100"
-                      ></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="about-me pt-4 pt-md-0">
-                    <div class="title-box-2">
-                      <h5 class="title-left">About me</h5>
-                    </div>
-                    <p class="lead">
-                      I am a WordPress and Front-End Developer with over 3 years
-                      of experience building, optimizing, and maintaining
-                      high-performance websites and web applications for
-                      agencies, public institutions, and freelance clients.
-                    </p>
-
-                    <p class="lead">
-                      I specialize in WordPress custom development using PHP,
-                      with a strong Front-End foundation in JavaScript, React,
-                      and Next.js, creating responsive and accessible interfaces
-                      focused on performance, usability, and business
-                      objectives.
-                    </p>
-
-                    <p class="lead">
-                      I have worked on real-world projects end to end, from
-                      implementing Figma-based designs to optimizing Core Web
-                      Vitals, technical SEO, and overall user experience,
-                      delivering stable and scalable production-ready solutions.
-                    </p>
-
-                    <p class="lead">
-                      I value clean code, best practices, and continuous
-                      learning, and I collaborate closely with stakeholders to
-                      translate requirements into effective digital products. I
-                      am currently open to full-time and freelance
-                      opportunities.
-                    </p>
-
-                    <p class="lead">
-                      You can find selected code samples on my GitHub. Most
-                      client projects are private due to confidentiality.
-                    </p>
-
-                    <a href="https://github.com/Pau2004-An">My GitHub</a>
+                    <a
+                      class="modern-link-button"
+                      href="https://github.com/Pau2004-An"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      View my GitHub <i class="fa-brands fa-github"></i>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -272,147 +277,130 @@
     </section>
 
     <!--/ Section Skills Star /-->
-    <section id="skill" class="services-mf route">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="title-box text-center">
-              <h3 class="title-a">All Skills</h3>
-              <p class="subtitle-a">
-                Here is a complete overview of all the skills I’ve developed
-                across different projects
-              </p>
-              <div class="line-mf"></div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Grid de Skills con Bootstrap -->
-        <div class="row text-center">
-          <div class="col-md-3 col-sm-6 mb-4">
-            <div class="skill-box">
-              <img src="./img/html.png" alt="HTML" class="img-fluid mb-2" />
-              <p>HTML</p>
-            </div>
-          </div>
-
-          <div class="col-md-3 col-sm-6 mb-4">
-            <div class="skill-box">
-              <img src="./img/css.png" alt="CSS" class="img-fluid mb-2" />
-              <p>CSS</p>
-            </div>
-          </div>
-
-          <div class="col-md-3 col-sm-6 mb-4">
-            <div class="skill-box">
-              <img
-                src="./img/javascript (1).png"
-                alt="JavaScript"
-                class="img-fluid mb-2"
-              />
-              <p>JavaScript</p>
-            </div>
-          </div>
-
-          <div class="col-md-3 col-sm-6 mb-4">
-            <div class="skill-box">
-              <img
-                src="./img/Bootstrap 1.png"
-                alt="Bootstrap"
-                class="img-fluid mb-2"
-              />
-              <p>Bootstrap</p>
-            </div>
-          </div>
-
-          <div class="col-md-3 col-sm-6 mb-4">
-            <div class="skill-box">
-              <img
-                src="./img/WordPress.png"
-                alt="WordPress"
-                class="img-fluid mb-2"
-              />
-              <p>WordPress</p>
-            </div>
-          </div>
-
-          <div class="col-md-3 col-sm-6 mb-4">
-            <div class="skill-box">
-              <img
-                src="./img/node-js.png"
-                alt="Node.js"
-                class="img-fluid mb-2"
-              />
-              <p>Node.js</p>
-            </div>
-          </div>
-
-          <div class="col-md-3 col-sm-6 mb-4">
-            <div class="skill-box">
-              <img
-                src="./img/react (2).png"
-                alt="React"
-                class="img-fluid mb-2"
-              />
-              <p>React</p>
-            </div>
-          </div>
-
-          <div class="col-md-3 col-sm-6 mb-4">
-            <div class="skill-box">
-              <img src="./img/PHP.png" alt="PHP" class="img-fluid mb-2" />
-              <p>PHP</p>
-            </div>
-          </div>
-
-          <div class="col-md-3 col-sm-6 mb-4">
-            <div class="skill-box">
-              <img
-                src="./img/github (7).png"
-                alt="GitHub"
-                class="img-fluid mb-2"
-              />
-              <p>GitHub</p>
-            </div>
-          </div>
-
-          <div class="col-md-3 col-sm-6 mb-4">
-            <div class="skill-box">
-              <img
-                src="./img/Analytics.png"
-                alt="Google Analytics"
-                class="img-fluid mb-2"
-              />
-              <p>Google Analytics</p>
-            </div>
-          </div>
-
-          <div class="col-md-3 col-sm-6 mb-4">
-            <div class="skill-box">
-              <img
-                src="./img/hubspot.png"
-                alt="CRM Hubspot"
-                class="img-fluid mb-2"
-              />
-              <p>CRM Hubspot</p>
-            </div>
-          </div>
-
-          <div class="col-md-3 col-sm-6 mb-4">
-            <div class="skill-box">
-              <img src="./img/figma.png" alt="Figma" class="img-fluid mb-2" />
-              <p>Figma</p>
-            </div>
-          </div>
+<section id="skill" class="services-mf route modern-section section-soft">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="title-box text-center">
+          <span class="section-kicker">TECH STACK</span>
+          <h3 class="title-a">All Skills</h3>
+          <p class="subtitle-a">
+            Here is a complete overview of all the skills I’ve developed
+            across different projects
+          </p>
+          <div class="line-mf"></div>
         </div>
       </div>
-    </section>
+    </div>
+
+    <!-- Grid de Skills con Bootstrap -->
+    <div class="row text-center">
+      <div class="col-md-3 col-sm-6 mb-4">
+        <div class="skill-box">
+          <img src="./img/javascript (1).png" alt="JavaScript" class="img-fluid mb-2" />
+          <p>JavaScript</p>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6 mb-4">
+        <div class="skill-box">
+          <img src="./img/Type.png" alt="TypeScript" class="img-fluid mb-2" />
+          <p>TypeScript</p>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6 mb-4">
+        <div class="skill-box">
+          <img src="./img/react (2).png" alt="React" class="img-fluid mb-2" />
+          <p>React</p>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6 mb-4">
+        <div class="skill-box">
+          <img src="./img/Next.js (1).png" alt="Next.js" class="img-fluid mb-2" />
+          <p>Next.js</p>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6 mb-4">
+        <div class="skill-box">
+          <img src="./img/node-js.png" alt="Node.js" class="img-fluid mb-2" />
+          <p>Node.js</p>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6 mb-4">
+        <div class="skill-box">
+          <img src="./img/html.png" alt="HTML" class="img-fluid mb-2" />
+          <p>HTML</p>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6 mb-4">
+        <div class="skill-box">
+          <img src="./img/css.png" alt="CSS" class="img-fluid mb-2" />
+          <p>CSS</p>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6 mb-4">
+        <div class="skill-box">
+          <img src="./img/tailwind.png" alt="Tailwind CSS" class="img-fluid mb-2" />
+          <p>Tailwind CSS</p>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6 mb-4">
+        <div class="skill-box">
+          <img src="./img/WordPress.png" alt="WordPress" class="img-fluid mb-2" />
+          <p>WordPress</p>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6 mb-4">
+        <div class="skill-box">
+          <img src="./img/PHP.png" alt="PHP" class="img-fluid mb-2" />
+          <p>PHP</p>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6 mb-4">
+        <div class="skill-box">
+          <img src="./img/github (7).png" alt="GitHub" class="img-fluid mb-2" />
+          <p>GitHub</p>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6 mb-4">
+        <div class="skill-box">
+          <img src="./img/figma.png" alt="Figma" class="img-fluid mb-2" />
+          <p>Figma</p>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6 mb-4">
+        <div class="skill-box">
+          <img src="./img/Analytics.png" alt="Google Analytics" class="img-fluid mb-2" />
+          <p>Google Analytics</p>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6 mb-4">
+        <div class="skill-box">
+          <img src="./img/hubspot.png" alt="CRM Hubspot" class="img-fluid mb-2" />
+          <p>CRM Hubspot</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
     <!--/ Section Skill End /-->
 
     <!--/ Call to Action /-->
     <div
-      class="testimonials paralax-mf bg-image"
+      class="testimonials paralax-mf bg-image modern-cta"
       style="background-image: url(img/hero2.png)"
     >
       <div class="overlay-mf"></div>
@@ -421,6 +409,7 @@
           <div class="col-md-12">
             <div id="testimonial-mf" class="owl-carousel owl-theme">
               <div class="testimonial-box">
+                <span class="cta-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></span>
                 <div class="author-test">
                   <span class="author"
                     >OPEN TO WORK & FREELANCE OPPORTUNITIES</span
@@ -431,7 +420,9 @@
                     Explore my projects and skills. I’m ready to bring value to
                     your team or collaborate on your next idea.
                   </p>
-                  <a href="#contact" class="btn-cta">Contact Me</a>
+                  <a href="#contact" class="btn-cta js-scroll">
+                    Let’s work together <i class="fa-solid fa-arrow-right"></i>
+                  </a>
                 </div>
               </div>
             </div>
@@ -442,24 +433,20 @@
     <!--/ End Call to Action /-->
 
     <!-- Portfolio/Works section -->
-    <section id="work" class="services-mf route">
+    <section id="work" class="services-mf route modern-section work-section">
       <div class="container">
         <!-- Título -->
         <div class="row">
           <div class="col-sm-12">
             <div class="title-box text-center">
-              <br /><br /><br /><br />
+              <span class="section-kicker">SELECTED PROJECTS</span>
               <h3 class="title-a">RECENT WORKS</h3>
               <p class="subtitle-a">
-                <br />
-                I enjoy combining design, development, and optimization to build
-                websites that not only look great but also perform and deliver
-                results. During my experience at a digital marketing agency, I
-                was involved in the entire process of creating websites — from
-                custom design to performance improvements and SEO. Each project
-                was an opportunity to learn and provide value. Today, I continue
-                exploring new technologies to take every development one step
-                further.
+                I build web applications and websites end to end — from
+                architecture and UI to performance and deployment. My work
+                spans modern web apps built with React and Next.js, as well
+                as WordPress sites for agencies and businesses, always with
+                a focus on clean code, performance and real results.
               </p>
               <div class="line-mf"></div>
             </div>
@@ -833,8 +820,7 @@
 
     <!--/ Section Contact-Footer Star /-->
     <section
-      class="paralax-mf footer-paralax bg-image sect-mt4 route"
-      style="background-image: url(img/contact.png)"
+      class="paralax-mf footer-paralax bg-image sect-mt4 route modern-contact"
     >
       <div class="overlay-mf"></div>
       <div class="container">
@@ -845,7 +831,8 @@
                 <div class="row">
                   <div class="col-md-6">
                     <div class="title-box-2">
-                      <h5 class="title-left">Send Message Us</h5>
+                      <span class="section-kicker">START A CONVERSATION</span>
+                      <h5 class="title-left">Send me a message</h5>
                     </div>
                     <div>
                       <form
@@ -929,7 +916,7 @@
                               type="submit"
                               class="button button-a button-big button-rouded button-send"
                             >
-                              Send Message
+                              Send Message <i class="fa-regular fa-paper-plane"></i>
                             </button>
                           </div>
                         </div>
@@ -941,15 +928,19 @@
                         class="button button-a button-big button-rouded button-whatsapp"
                         style="background-color: #179c48; border: none"
                       >
-                        Text me on WhatsApp
+                        <i class="fa-brands fa-whatsapp"></i> Text me on WhatsApp
                       </a>
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="title-box-2 pt-4 pt-md-0">
+                      <span class="section-kicker">GET IN TOUCH</span>
                       <h5 class="title-left">Get in Touch</h5>
                     </div>
                     <div class="more-info">
+                      <div class="availability-badge">
+                        <span></span> Available for new opportunities
+                      </div>
                       <p class="lead">
                         I am building my path as a software developer and
                         currently looking for job opportunities where I can
@@ -1013,7 +1004,7 @@
             <div class="col-sm-12">
               <div class="copyright-box text-center">
                 <p class="copyright">
-                  &copy; 2025 <strong>Paula Palacios</strong>. All rights
+                  &copy; 2026 <strong>Paula Palacios</strong>. All rights
                   reserved.
                 </p>
                 <div class="credits">
@@ -1556,6 +1547,7 @@
     <!-- Main Scripts -->
     <script src="js/main.js"></script>
     <script src="js/script_portfolio.js"></script>
+    <script src="js/project-modals.js"></script>
     <script src="js/night.js"></script>
 
     <!-- Botón flotante de traducción -->

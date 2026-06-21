@@ -1,4 +1,4 @@
-// 🌙 Day/Night Toggle Script
+// Day/Night Toggle Script
 document.addEventListener("DOMContentLoaded", function () {
   const toggleButton = document.getElementById("darkModeToggle");
   const body = document.body;
@@ -6,9 +6,9 @@ document.addEventListener("DOMContentLoaded", function () {
   // Verifica si hay un modo guardado en localStorage
   if (localStorage.getItem("dark-mode") === "enabled") {
     body.classList.add("dark-mode");
-    toggleButton.textContent = "☀️"; // Muestra sol si está activado
+    toggleButton.textContent = "\u2600\uFE0F";
   } else {
-    toggleButton.textContent = "🌙"; // Muestra luna por defecto
+    toggleButton.textContent = "\uD83C\uDF19";
   }
 
   // Evento de click en el botón
@@ -16,10 +16,10 @@ document.addEventListener("DOMContentLoaded", function () {
     body.classList.toggle("dark-mode");
 
     if (body.classList.contains("dark-mode")) {
-      toggleButton.textContent = "☀️";
+      toggleButton.textContent = "\u2600\uFE0F";
       localStorage.setItem("dark-mode", "enabled");
     } else {
-      toggleButton.textContent = "🌙";
+      toggleButton.textContent = "\uD83C\uDF19";
       localStorage.setItem("dark-mode", "disabled");
     }
   });

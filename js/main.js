@@ -115,3 +115,49 @@
 	});
 
 })(jQuery);
+
+/*
+ * Progressive enhancement for the refreshed sections.
+ * IntersectionObserver keeps the motion lightweight and respects reduced-motion CSS.
+ */
+document.addEventListener("DOMContentLoaded", function () {
+  var revealTargets = document.querySelectorAll(
+    ".modern-section .title-box, .about-mf .box-shadow-full, .skill-box, .modern-cta .testimonial-box, .portfolio-item, .modern-contact #contact",
+  );
+
+  revealTargets.forEach(function (element) {
+    element.classList.add("reveal-section");
+  });
+
+  if (!("IntersectionObserver" in window)) {
+    revealTargets.forEach(function (element) {
+      element.classList.add("is-visible");
+    });
+    return;
+  }
+
+  var revealObserver = new IntersectionObserver(
+    function (entries, observer) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    {
+      threshold: 0.12,
+      rootMargin: "0px 0px -45px 0px",
+    },
+  );
+
+  revealTargets.forEach(function (element, index) {
+    element.style.transitionDelay = Math.min(index % 4, 3) * 70 + "ms";
+    revealObserver.observe(element);
+  });
+
+  document.querySelectorAll("#grid img, #skill img").forEach(function (image) {
+    image.loading = "lazy";
+    image.decoding = "async";
+  });
+});
